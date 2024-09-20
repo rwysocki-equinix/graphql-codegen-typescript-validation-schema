@@ -71,7 +71,8 @@
     "lint-fix": "eslint . --fix",
     "generate": "run-p build:* && graphql-codegen",
     "generate:esm": "run-p build:* && graphql-codegen-esm",
-    "prepublish": "run-p build:*"
+    "prepublish": "run-p build:*",
+    "postinstall": "run-p prepublish"
   },
   "peerDependencies": {
     "graphql": "^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0"
